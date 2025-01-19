@@ -1,1 +1,46 @@
 Exercise 9.2.6 Git
+
+1.  Everything installed
+2.  git config --global --get user.name
+    Sergio
+    git config --global --get user.email
+    esrgio.torres.lozada@gmail.com
+3.  mkdir GitAdventure
+    cd GitAdventure
+    git init
+
+4.  echo "Embarking on my journery to master Git." > journey.txt
+    git status
+    git add journey.txt
+    git commit -m "journey added + content"
+    git status
+
+5.  echo "This file is meant to be deleted." > temp.txt
+    git add temp.txt
+    git commit -m "add temp to be deleted."
+    git rm temp.txt
+    git commit -m "delete temp"
+    git status
+
+6.  git mv journey.txt adventure.txt
+    echo "My journey evolves into an adventure with Git"
+    git add adventure.txt
+    git commit -m "adventure name + content change"
+
+7.  echo "*.log"> .gitignore
+    git add .gitignore
+    git commit -m ".gitignore to ignore .log files"
+    touch test.log
+    git status
+
+8.  echo "Exploring the depths of Git commands and their powers." >> adventure.txt
+    git status -s
+    git add adventure.txt
+    git commit -m "Added line to adventure.txt"
+
+9.  git log --oneline --reverse
+    git restore --source=<commit_id> adventure.txt
+
+        NEED TO GET THE COMMIT HAS/ID FROM git log --oneline -- reverse to know which commit needs to be restored
+
+    git add adventure.txtgit commit -m "Restore to initial state"
