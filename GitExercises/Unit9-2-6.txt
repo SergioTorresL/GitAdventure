@@ -39,8 +39,6 @@ Exercise 9.2.6 Git
     git commit -m "Added line to adventure.txt"
 
 9.  git log --oneline --reverse
-    git restore --source=<commit_id> adventure.txt
-
-        NEED TO GET THE COMMIT HAS/ID FROM git log --oneline -- reverse to know which commit needs to be restored
-
+    b2a2301
+    git restore --source=<b2a2301> adventure.txt
     git add adventure.txtgit commit -m "Restore to initial state"
