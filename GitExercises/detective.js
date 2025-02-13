@@ -11,3 +11,24 @@ function mysteryOperation ()
 		throw new Error("The operation is failed mysteriously!");
 	}
 }
+
+
+const daysIfSuccessful = 13;
+const daysIfNotSuccessful = 1;
+const daysForAttendance = 3;
+const atttendance = 20;
+const deservedDays = 0;
+
+
+//try{
+//	mysteryOperation ();
+//	deservedDays += daysIfSuccesful;
+
+//	} catch {
+//	deservedDays += daysIfNotSuccessful;				//if Error appears
+
+//	} finally {
+//	deservedDays += daysForAttendance;
+//}
+
+//console.log(deservedDays)
