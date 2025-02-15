@@ -12,23 +12,23 @@ function mysteryOperation ()
 	}
 }
 
-
 const daysIfSuccessful = 13;
 const daysIfNotSuccessful = 1;
 const daysForAttendance = 3;
 const atttendance = 20;
-const deservedDays = 0;
+let deservedDays = 0;
+
+for (let i = 0; i < atttendance; i++)
+{
+	try{
+	mysteryOperation ();
+	deservedDays += daysIfSuccesful;
+	} catch {
+	deservedDays += daysIfNotSuccessful;				//if Error appears
+	} finally {
+	deservedDays += daysForAttendance;
+	}	
+}
 
 
-//try{
-//	mysteryOperation ();
-//	deservedDays += daysIfSuccesful;
-
-//	} catch {
-//	deservedDays += daysIfNotSuccessful;				//if Error appears
-
-//	} finally {
-//	deservedDays += daysForAttendance;
-//}
-
-//console.log(deservedDays)
+console.log(deservedDays)
